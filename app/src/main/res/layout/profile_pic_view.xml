@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/profile_pic_image_view"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/circular_bg"
+        android:backgroundTint="@color/off_white"
+        android:padding="4dp"
+        android:src="@drawable/person_icon"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/status_indicator"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignEnd="@id/profile_pic_image_view"
+        android:layout_alignBottom="@id/profile_pic_image_view"
+        android:src="@drawable/offline_indicator"
+        android:visibility="gone"/>
+
+</RelativeLayout>

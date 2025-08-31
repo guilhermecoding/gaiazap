@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpEmailActivity">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/icon_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/my_primary"
+        android:layout_margin="10dp"
+        android:contentDescription="Back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/person_icon"
+            app:tint="@color/my_primary"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crie sua conta"
+            android:layout_gravity="center_vertical"
+            android:letterSpacing="0.08"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5dp"
+            />
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5dp"
+            />
+
+        <EditText
+            android:id="@+id/signup_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Confirme sua senha"
+            android:inputType="textPassword"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5dp"
+            />
+
+        <Button
+            android:id="@+id/signup_create_account_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Criar Conta"
+            android:background="@drawable/btn_rounded_corner"
+            android:layout_marginTop="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/signup_progress_bar"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/my_primary"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</RelativeLayout>
