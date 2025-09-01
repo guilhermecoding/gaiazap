@@ -12,40 +12,42 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/chat_icon"
-        app:tint="@color/my_primary"
         android:layout_marginBottom="20dp"
-        />
+        android:src="@drawable/round_groups_24"
+        app:tint="@color/my_primary" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter Group Name"
         android:layout_gravity="center_vertical"
+        android:layout_marginBottom="20dp"
         android:letterSpacing="0.08"
-        android:textStyle="bold"
+        android:text="Crie um grupo"
+        android:textAlignment="center"
+        android:textColor="@color/my_primary"
         android:textSize="25sp"
-        android:layout_marginBottom="20dp"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/group_name_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:hint="Group Name"
-        android:inputType="text"
         android:layout_margin="10dp"
         android:background="@drawable/edit_text_rounded_corner"
-        android:elevation="5dp"
-        />
+        android:elevation="0dp"
+        android:hint="Digite um nome"
+        android:inputType="text"
+        android:padding="10dp" />
 
     <Button
         android:id="@+id/create_group_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="@drawable/btn_rounded_corner"
-        android:text="Create Group"
-        android:layout_marginTop="20dp"/>
+        android:text="Criar Grupo"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <ProgressBar
         android:id="@+id/progress_bar"

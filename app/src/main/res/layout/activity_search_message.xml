@@ -16,13 +16,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search Messages"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_marginStart="10dp"
             android:layout_centerVertical="true"
-            android:layout_toEndOf="@id/back_btn"/>
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/back_btn"
+            android:text="Buscar mensagens"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/back_btn"
@@ -46,23 +46,24 @@
             android:id="@+id/search_message_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_rounded_corner"
             android:layout_margin="10dp"
-            android:hint="Search for words..."
-            android:padding="10dp"
-            android:elevation="4dp"
-            android:layout_toStartOf="@id/search_message_btn"/>
+            android:layout_toStartOf="@id/search_message_btn"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="0dp"
+            android:hint="Palavras-chave"
+            android:padding="10dp" />
+
         <ImageButton
             android:id="@+id/search_message_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/icon_search"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:layout_margin="10dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            app:tint="@color/my_primary"
             android:padding="4dp"
-            android:layout_margin="10dp"/>
+            android:src="@drawable/round_search_24"
+            app:tint="@color/my_primary" />
 
     </RelativeLayout>
 

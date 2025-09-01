@@ -78,12 +78,12 @@
             android:id="@+id/pinned_message_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is a pinned message"
-            android:layout_toEndOf="@id/pin_icon"
-            android:layout_toStartOf="@+id/unpin_btn"
             android:layout_marginStart="8dp"
+            android:layout_toStartOf="@+id/unpin_btn"
+            android:layout_toEndOf="@id/pin_icon"
+            android:ellipsize="end"
             android:maxLines="1"
-            android:ellipsize="end"/>
+            android:text="Mensagem fixada" />
 
         <ImageButton
             android:id="@+id/unpin_btn"
@@ -108,9 +108,9 @@
             android:id="@+id/in_chat_search_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Search in chat..."
             android:layout_toStartOf="@+id/search_up_btn"
-            android:inputType="text"/>
+            android:hint="Busque por alguém"
+            android:inputType="text" />
 
         <ImageButton
             android:id="@+id/search_up_btn"
@@ -158,13 +158,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
             android:layout_toStartOf="@id/message_send_btn"
             android:layout_toEndOf="@id/attach_file_btn"
             android:background="@drawable/edit_text_rounded_corner"
-            android:elevation="4dp"
-            android:hint="Write message here"
-            android:padding="10dp"
-            android:layout_marginEnd="10dp"/>
+            android:elevation="0dp"
+            android:hint="Digite aqui..."
+            android:padding="10dp" />
 
         <ImageButton
             android:id="@+id/message_send_btn"

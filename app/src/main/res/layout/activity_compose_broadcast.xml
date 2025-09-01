@@ -24,18 +24,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nova Transmissão"
+                android:text="Nova Lista de Transmissão"
+                android:textColor="@color/white"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/broadcast_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Para x destinatários"
+                android:text="Envie mensagens para diversos contatos"
                 android:textColor="@color/white"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -62,12 +62,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
             android:layout_toStartOf="@id/broadcast_send_btn"
             android:background="@drawable/edit_text_rounded_corner"
-            android:elevation="4dp"
-            android:hint="Escreva sua transmissão"
-            android:padding="10dp"
-            android:layout_marginEnd="10dp"/>
+            android:elevation="0dp"
+            android:hint="Digite aqui..."
+            android:padding="10dp" />
 
         <ImageButton
             android:id="@+id/broadcast_send_btn"

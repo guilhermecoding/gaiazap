@@ -4,43 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:gravity="center|top"
     android:orientation="vertical"
-    android:gravity="center"
-    android:layout_margin="20dp"
     tools:context=".LoginActivity">
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="64dp" />
+
     <ImageView
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:src="@drawable/chat_icon"
-        app:tint="@color/my_primary"/>
+        android:layout_width="270dp"
+        android:layout_height="275dp"
+        android:src="@drawable/formulario_de_inscricao" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/tasa"
+        android:text="Este é o GaiaZap"
         android:textColor="@color/my_primary"
-        android:textStyle="bold"
-        android:fontFamily="monospace"
-        android:layout_marginTop="20dp"/>
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Converse, interaja, divirta-se..."
+        android:textAlignment="center"
+        android:textColor="@color/my_primary"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/login_phone_button"
-        android:layout_width="match_parent"
+        android:layout_width="283dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Login com Telefone"
-        android:background="@drawable/btn_rounded_corner"
-        android:textColor="@color/white"/>
+        android:backgroundTint="@color/my_primary"
+        android:drawableLeft="@drawable/round_local_phone_24"
+        android:drawableTint="@color/white"
+        android:text="Entrar com telefone"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:iconTint="@color/white" />
 
     <Button
         android:id="@+id/login_email_button"
-        android:layout_width="match_parent"
+        android:layout_width="287dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Login com E-mail"
-        android:background="@drawable/btn_rounded_corner"
-        android:textColor="@color/white"/>
+        android:backgroundTint="@color/my_primary"
+        android:drawableLeft="@drawable/round_email_24"
+        android:drawableTint="@color/white"
+        android:text="Entrar com o email"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
 </LinearLayout>
