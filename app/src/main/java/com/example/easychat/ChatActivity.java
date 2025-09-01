@@ -299,7 +299,10 @@ public class ChatActivity extends AppCompatActivity implements ChatRecyclerAdapt
             }
         }
     }
-
+    /*
+    Gemini 2.5 -INICIO
+    Estou tendo problema com upar imagens no chat acredito que seja por causa do storage do firebase poderia conferir e arrumar ?
+     */
     void uploadImageToFirebase() {
         if (selectedImageUri == null) return;
         String imageId = "img_" + System.currentTimeMillis();
@@ -334,7 +337,9 @@ public class ChatActivity extends AppCompatActivity implements ChatRecyclerAdapt
                     Toast.makeText(this, "Falha ao enviar a imagem para o chat.", Toast.LENGTH_SHORT).show();
                 });
     }
-
+    /*
+    Gemini 2.5 - FIM
+    */
     private void toggleSearchBar() {
         if (inChatSearchBar.getVisibility() == View.VISIBLE) {
             inChatSearchBar.setVisibility(View.GONE);
