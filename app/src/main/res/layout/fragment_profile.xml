@@ -23,8 +23,7 @@
             android:background="@drawable/circular_bg"
             android:backgroundTint="@color/my_primary"
             android:scaleType="centerCrop"
-            android:src="@drawable/round_person_24"
-            android:tint="@color/white" />
+            android:src="@drawable/round_person_24" />
 
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/busy_switch"
