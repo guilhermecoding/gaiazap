@@ -12,16 +12,17 @@
         android:layout_height="wrap_content"
         android:background="@color/my_primary"
         android:padding="10dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contact Info"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
             android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
             android:layout_toEndOf="@id/back_btn"
-            android:layout_marginStart="10dp" />
+            android:text="Informações do contato"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
         <ImageButton
             android:id="@+id/back_btn"
             android:layout_width="32dp"
@@ -44,9 +45,9 @@
             android:id="@+id/profile_pic_view"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:src="@drawable/person_icon"
-            app:tint="@color/my_primary"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/user"
+            app:tint="@color/my_primary" />
         <TextView
             android:id="@+id/username_view"
             android:layout_width="wrap_content"
@@ -59,17 +60,20 @@
             android:id="@+id/notification_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Custom Notifications"
-            android:textSize="18sp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:text="Customizar notificações"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/remove_contact_btn"
-            android:layout_width="match_parent"
+            android:layout_width="157dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:backgroundTint="@android:color/holo_red_dark"
-            android:text="Remove Contact"
+            android:drawableLeft="@drawable/round_person_remove_24"
+            android:drawableTint="@color/white"
+            android:text="Apagar"
             android:textColor="@color/white"
-            android:layout_marginTop="30dp"/>
+            android:textSize="20sp" />
     </LinearLayout>
 </RelativeLayout>

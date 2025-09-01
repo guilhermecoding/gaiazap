@@ -6,5 +6,6 @@
         <item name="colorOnSecondary">@color/black</item>
         <item name="android:statusBarColor">?attr/colorPrimary</item>
         <item name="android:windowBackground">@color/off_white</item>
+        <item name="android:fontFamily">@font/tasa</item>
     </style>
 </resources>
