@@ -26,51 +26,51 @@
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/otp_icon"
-            app:tint="@color/my_primary"
-            />
+            android:src="@drawable/round_email_24"
+            app:tint="@color/my_primary" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Entre com seu e-mail"
             android:layout_gravity="center_vertical"
+            android:layout_marginBottom="20dp"
             android:letterSpacing="0.08"
-            android:textStyle="bold"
+            android:text="Entrar com e-mail"
+            android:textAlignment="center"
+            android:textColor="@color/my_primary"
             android:textSize="25sp"
-            android:layout_marginBottom="20dp"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/login_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:hint="E-mail"
-            android:inputType="textEmailAddress"
             android:layout_margin="10dp"
             android:background="@drawable/edit_text_rounded_corner"
-            android:elevation="5dp"
-            />
+            android:elevation="0dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
 
         <EditText
             android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:hint="Senha"
-            android:inputType="textPassword"
             android:layout_margin="10dp"
             android:background="@drawable/edit_text_rounded_corner"
-            android:elevation="5dp"
-            />
+            android:elevation="0dp"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="10dp" />
 
         <Button
             android:id="@+id/login_email_next_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:layout_marginTop="20dp"
             android:background="@drawable/btn_rounded_corner"
-            android:layout_marginTop="20dp"/>
+            android:text="Entrar"
+            android:textSize="20sp" />
 
         <ProgressBar
             android:id="@+id/login_progress_bar"
