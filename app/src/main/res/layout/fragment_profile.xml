@@ -39,7 +39,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/edit_text_rounded_corner"
             android:elevation="0dp"
-            android:hint="Username"
+            android:hint="Nome de usuário"
             android:inputType="text"
             android:padding="10dp" />
 
@@ -50,7 +50,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/edit_text_rounded_corner"
             android:elevation="0dp"
-            android:hint="Age"
+            android:hint="Idade"
             android:inputType="number"
             android:padding="10dp" />
 
@@ -58,12 +58,12 @@
             android:id="@+id/profile_city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:hint="City"
-            android:inputType="text"
             android:layout_margin="10dp"
             android:background="@drawable/edit_text_rounded_corner"
-            android:elevation="5dp"/>
+            android:elevation="5dp"
+            android:hint="Cidade"
+            android:inputType="text"
+            android:padding="10dp" />
 
         <EditText
             android:id="@+id/profile_email"
@@ -83,7 +83,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/edit_text_rounded_corner"
             android:elevation="0dp"
-            android:hint="New Password"
+            android:hint="Nova senha"
             android:inputType="textPassword"
             android:padding="10dp" />
 
@@ -94,7 +94,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/edit_text_rounded_corner"
             android:elevation="0dp"
-            android:hint="Confirm New Password"
+            android:hint="Confirma senha"
             android:inputType="textPassword"
             android:padding="10dp" />
 
@@ -106,7 +106,7 @@
             android:background="@drawable/edit_text_rounded_corner"
             android:elevation="0dp"
             android:enabled="false"
-            android:hint="Phone"
+            android:hint="Telefone"
             android:inputType="text"
             android:padding="10dp" />
 
