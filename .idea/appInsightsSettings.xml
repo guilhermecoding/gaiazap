@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.example.easychat" />
-                  <option name="mobileSdkAppId" value="1:741194885653:android:b1b1d9a7a8c52562a63c1c" />
-                  <option name="projectId" value="chat-8b58c" />
-                  <option name="projectNumber" value="741194885653" />
+                  <option name="mobileSdkAppId" value="1:588486153544:android:6f7b8c1a0cfb0c3f9d8f7d" />
+                  <option name="projectId" value="chatappp-2a84d" />
+                  <option name="projectNumber" value="588486153544" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
