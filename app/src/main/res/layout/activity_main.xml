@@ -13,48 +13,60 @@
         android:background="@color/my_primary"
         android:padding="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_marginStart="10dp"
-            android:layout_centerVertical="true"/>
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/main_add_user_btn"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/icon_person_add"
-            android:layout_alignParentEnd="true"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            app:tint="@color/white"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="10dp"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/icon" />
 
-        <ImageButton
-            android:id="@+id/main_search_message_btn"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/icon_search"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            app:tint="@color/white"
-            android:layout_centerVertical="true"
-            android:layout_toStartOf="@id/main_add_user_btn"
-            android:layout_marginEnd="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/main_broadcast_btn"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/ic_broadcast"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            app:tint="@color/white"
-            android:layout_centerVertical="true"
-            android:layout_toStartOf="@id/main_search_message_btn"
-            android:layout_marginEnd="15dp"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/main_broadcast_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="15dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/round_checklist_24"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/main_search_message_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="15dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/round_search_24"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/main_add_user_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/round_person_add_24"
+                app:tint="@color/white" />
+
+        </LinearLayout>
 
     </RelativeLayout>
 
@@ -62,8 +74,10 @@
         android:id="@+id/main_frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/divider"
         android:layout_below="@id/main_toolbar"
-        android:layout_above="@id/divider"/>
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/main_add_new_chat_btn"
@@ -72,9 +86,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="24dp"
+        android:backgroundTint="@color/my_primary"
         android:src="@drawable/ic_add"
-        app:tint="@color/white"
-        android:backgroundTint="@color/my_primary" />
+        app:maxImageSize="32dp"
+        app:tint="@color/white" />
 
 
     <com.google.android.material.divider.MaterialDivider
@@ -89,6 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="?attr/selectableItemBackgroundBorderless"
-        app:menu="@menu/bottom_navigation_menu"/>
+        app:itemIconSize="30dp"
+        app:menu="@menu/bottom_navigation_menu" />
 
 </RelativeLayout>
