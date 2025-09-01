@@ -39,20 +39,25 @@
 
     <Button
         android:id="@+id/login_phone_button"
-        android:layout_width="352dp"
+        android:layout_width="283dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/my_primary"
+        android:drawableLeft="@drawable/round_local_phone_24"
+        android:drawableTint="@color/white"
         android:text="Entrar com telefone"
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:iconTint="@color/white" />
 
     <Button
         android:id="@+id/login_email_button"
-        android:layout_width="353dp"
+        android:layout_width="287dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:backgroundTint="@color/my_primary"
+        android:drawableLeft="@drawable/round_email_24"
+        android:drawableTint="@color/white"
         android:text="Entrar com o email"
         android:textColor="@color/white"
         android:textSize="20sp" />
