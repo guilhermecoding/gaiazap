@@ -52,17 +52,18 @@
             android:elevation="0dp"
             android:hint="Palavras-chave"
             android:padding="10dp" />
+
         <ImageButton
             android:id="@+id/search_message_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/icon_search"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:layout_margin="10dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            app:tint="@color/my_primary"
             android:padding="4dp"
-            android:layout_margin="10dp"/>
+            android:src="@drawable/round_search_24"
+            app:tint="@color/my_primary" />
 
     </RelativeLayout>
 
