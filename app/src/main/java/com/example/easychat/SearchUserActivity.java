@@ -50,16 +50,20 @@ public class SearchUserActivity extends AppCompatActivity {
             setupSearchRecyclerView(searchTerm.toLowerCase());
         });
     }
+    /*
+    Gemini 2.5 pro -INICIO
+    Buscar os contatos da conversa ta dando problema pq ? estou fazendo a busca errado? olhe e corriga oq estivere faltando
 
+     */
     void setupSearchRecyclerView(String searchTerm){
-        // Lógica CORRIGIDA: Buscar a lista de contactos primeiro
+        // corrigindo a busca  da lista de contatos
         FirebaseUtil.allChatroomCollectionReference()
                 .whereArrayContains("userIds", FirebaseUtil.currentUserId())
                 .get().addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         List<String> contactIds = new ArrayList<>();
                         for (ChatroomModel chatroom : task.getResult().toObjects(ChatroomModel.class)) {
-                            // Apenas adicionar contactos de conversas individuais, não de grupos
+                            // Apenas adicionar contatos na conversa
                             if (!chatroom.isGroupChat()) {
                                 for (String userId : chatroom.getUserIds()) {
                                     if (!userId.equals(FirebaseUtil.currentUserId())) {
@@ -84,6 +88,9 @@ public class SearchUserActivity extends AppCompatActivity {
                     }
                 });
     }
+    /*
+    Gemini 2.5 pro -FIM
+    */
 
     @Override
     protected void onStart() {

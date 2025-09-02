@@ -60,8 +60,8 @@ public class LoginOtpActivity extends AppCompatActivity {
 
         nextBtn.setOnClickListener(v -> {
             String enteredOtp  = otpInput.getText().toString();
-           PhoneAuthCredential credential =  PhoneAuthProvider.getCredential(verificationCode,enteredOtp);
-           signIn(credential);
+            PhoneAuthCredential credential =  PhoneAuthProvider.getCredential(verificationCode,enteredOtp);
+            signIn(credential);
         });
 
         resendOtpTextView.setOnClickListener((v)->{
@@ -69,7 +69,10 @@ public class LoginOtpActivity extends AppCompatActivity {
         });
 
     }
-
+    /*
+    Claud - 4.1 - INICIO
+    Não esta funcionando o envio de OTP poderia conferir pra mim ? e corrigir oq tiver errado ?
+    */
     void sendOtp(String phoneNumber,boolean isResend){
         startResendTimer();
         setInProgress(true);
@@ -107,7 +110,9 @@ public class LoginOtpActivity extends AppCompatActivity {
         }
 
     }
-
+    /*
+    Claud - 4.1 - FIM
+    */
     void setInProgress(boolean inProgress){
         if(inProgress){
             progressBar.setVisibility(View.VISIBLE);

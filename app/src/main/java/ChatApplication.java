@@ -14,6 +14,12 @@ public class ChatApplication extends Application implements Application.Activity
         super.onCreate();
         registerActivityLifecycleCallbacks(this);
     }
+    /*
+    Claudio - 4.1 -INICIO
+        Porque não esta atualizando o status de online/offline? qual erro no trecho ?
+
+    */
+
 
     @Override
     public void onActivityStarted(@NonNull android.app.Activity activity) {
@@ -31,7 +37,9 @@ public class ChatApplication extends Application implements Application.Activity
         }
     }
 
-    // Métodos não utilizados
+    /*
+    Claudio - 4.1 FIM
+    */
     @Override
     public void onActivityCreated(@NonNull android.app.Activity activity, @Nullable Bundle savedInstanceState) {}
     @Override
